@@ -16,17 +16,16 @@ namespace ToDo
             this.DateForDays = DateForDays;
         }
 
-       
+
         public void addTaskToList(int numberOfTask, string status, string nameOfTask, string DateForDays)
         {
-            this.DateForDays = DateForDays;
             TasksUnDone.Add(new DateTask(numberOfTask, status, nameOfTask, DateForDays));
         }
 
         public int getTotalDay(DateTime DateFromUser)
         {
             TimeSpan days = DateFromUser - DateTime.Now;
-            return Convert.ToInt32(days.TotalDays)  ;
+            return Convert.ToInt32(days.TotalDays);
         }
     }
 }

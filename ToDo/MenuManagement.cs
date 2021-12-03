@@ -12,6 +12,8 @@ namespace ToDo
         public NormalTask normalTask = new NormalTask();
         public DateTask dateTask = new DateTask();
         public CheckListTask checkListTask = new CheckListTask();
+
+        // function to add a new task normal one
         public void menuAddTaskWithoutTime()
         {
             Console.Clear();
@@ -22,7 +24,7 @@ namespace ToDo
             Console.ReadKey();
             Console.Clear();
         }
-
+        // function add task with deadline
         public void menuAddTaskWithDate()
         {
             bool enterCorrect = true;
@@ -54,6 +56,7 @@ namespace ToDo
 
         }
 
+        //Add task with checklist
         public void menuAddTaskWithCheckList()
         {
 
@@ -69,6 +72,7 @@ namespace ToDo
                 if (addToCheckLista == "q")
                 {
                     Console.Clear();
+                    // add to Map
                     checkListTask.addToMainList(nameForMainTask);
                 }
                 else
@@ -84,6 +88,7 @@ namespace ToDo
             Console.Clear();
         }
 
+        // move items from Dont list to archive list
         public void menuMoveToArchive()
         {
             foreach (NormalTask item in normalTask.TasksDone)
@@ -143,6 +148,7 @@ namespace ToDo
             }
         }
 
+        // update status , Adding X  or remove it
         public void updateStatus(string symbol)
         {
             foreach (NormalTask item in normalTask.TasksUnDone)

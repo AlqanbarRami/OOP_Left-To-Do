@@ -11,6 +11,8 @@ namespace ToDo
         {
 
         }
+
+        //Main menu 
         public void startMainMenu()
         {
             Console.Clear();
@@ -57,8 +59,8 @@ namespace ToDo
                 }
             }
         }
-
-        public void menuAddingPart()
+        // Adding part menu
+        public void menuAddingPart()  
         {
             while (continueMenuOrStop)
             {
@@ -71,13 +73,13 @@ namespace ToDo
                 switch (chooseFromLista)
                 {
                     case "1":
-                        menuAddTaskWithoutTime();
+                        menuAddTaskWithoutTime();  // adding normal task without Deadlin
                         break;
                     case "2":
-                        menuAddTaskWithDate();
+                        menuAddTaskWithDate();     // adding task with deadline
                         break;
                     case "3":
-                        menuAddTaskWithCheckList();
+                        menuAddTaskWithCheckList();    // Adding task with checklist
                         break;
                     case "q":
                         Console.Clear();
@@ -93,6 +95,7 @@ namespace ToDo
             }
         }
 
+        // show task part
         public void menuShowTasks(string typeOfTasks)
         {
             switch (typeOfTasks)
@@ -103,13 +106,14 @@ namespace ToDo
                     while (symbol != "q")
                     {
                         Console.Clear();
+                        // getting the tasks from another function
                         getTasksForToday();
                         symbol = Console.ReadLine().ToLower();
                         //Go And Update status and add items to Done List
                         updateStatus(symbol);
                         if (symbol == "q")
                         {
-                            //function to check if all items Status = X 
+                            //function to check if all items Status = X , This function just for checklist
                             checkListTask.addToDoneCheckLista();
                             Console.Clear();
                             startMainMenu();
@@ -120,7 +124,7 @@ namespace ToDo
 
                     break;
                 case "archive":
-                    getItemsFromArchive();
+                    getItemsFromArchive(); //getting items from archive list
                     startMainMenu();
                     break;
                 default:
@@ -130,7 +134,7 @@ namespace ToDo
             Console.Clear();
 
         }
-
+        // function to show all tasks
         public void getTasksForToday(){
              Console.WriteLine("Här är alla dina uppgifter : \n");
                         foreach (NormalTask item in normalTask.TasksUnDone)
@@ -156,6 +160,7 @@ namespace ToDo
                         Console.WriteLine("\nVill du markera uppgift som avklarad, tryck på motsvaran siffra och Enter");
                         Console.WriteLine("Annars tryck Q och Enter för att gå tillbaka till menyn \n ");
         }
+        // functions to show all tasks in archive
         public void getItemsFromArchive()
         {
             Console.WriteLine("Här är alla dina arkiverade uppgifter : \n");
