@@ -129,9 +129,10 @@ namespace ToDo.Tests
 
             Assert.Equal(2, emptyOrNot);  // Should be 2 Object inside
         }
-        
+
         [Fact]
-        public void checkingKeyLikeNameOfMainTask(){
+        public void checkingKeyLikeNameOfMainTask()
+        {
             CheckListTask checkListTask = new CheckListTask();
             checkListTask.addTaskToList(1, "X", "First Element in CheckList");
             checkListTask.addToMainList("Fix All Of Them"); // Name Of Main Task
@@ -144,7 +145,7 @@ namespace ToDo.Tests
             bool checkTheSecondKey = checkListTask2.MainList.ContainsKey("Fix Them Now");
 
             Assert.Equal(true, checkTheFirstKey);  // Should be true
-            Assert.Equal(true,checkTheSecondKey);
+            Assert.Equal(true, checkTheSecondKey);
         }
 
 

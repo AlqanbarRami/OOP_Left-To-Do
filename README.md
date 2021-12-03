@@ -31,7 +31,7 @@
 |**12**  |**JA**| *Man ska kunna lägga till en särskild typ av uppgift med en "deadline", deadline ska sparas i systemet som antalet dagar kvar att slutföra uppgiften. Denna typ av uppgift ska vara en egen klass.*|
 |**13**  |**JA**| *Man ska kunna lägga till en typ av uppgift som har en inbyggd checklista med ytterligare detaljer - för att markeras som avklarad så måste alla punkterna i checklistan också markeras som avklarade. Denna typ av uppgift ska vara en egen klass.*|
 |**14**  |**JA**| *Lösningen ska innehålla ytterligare 1 eller 2 enhetestester som är lämpliga för de nya typerna av uppgifterna.15 (vg)*|
-|**15**  |*Ja/nej*| *Lösningen ska förutom kod innehålla en fil med namnet "reflections" i formatet md, txt eller pdf16 (vg)*|
-|**16**  |*Ja/nej*| *reflections-filen ska en ska innehålla en kort beskrivning av kodens funktioner och struktur så som du förstår den. Ungefär 2-3 paragrafer.17 (vg)*|
-|**17**  |*Ja/nej*| *Filen reflections ska innehålla rubriken "använda principerer" där du förklarat hur lösningen använder de objektorienterade principerna arv, enkapsulation och polymorfism för de ytterligare uppgifterna i krav 12 och 1318 (vg)*|
-|**18**  |*Ja/nej*| *Filen reflections ska innehålla rubriken "tester för klasser" där du förklarat hur de nya testerna som du skapat för kravet 14 fungerar och varför de är väl valda enhetestester.*|
+|**15**  |**JA**| *Lösningen ska förutom kod innehålla en fil med namnet "reflections" i formatet md, txt eller pdf16 (vg)*|
+|**16**  |**JA**| *reflections-filen ska en ska innehålla en kort beskrivning av kodens funktioner och struktur så som du förstår den. Ungefär 2-3 paragrafer.17 (vg)*|
+|**17**  |**JA**| *Filen reflections ska innehålla rubriken "använda principerer" där du förklarat hur lösningen använder de objektorienterade principerna arv, enkapsulation och polymorfism för de ytterligare uppgifterna i krav 12 och 1318 (vg)*|
+|**18**  |**JA**| *Filen reflections ska innehålla rubriken "tester för klasser" där du förklarat hur de nya testerna som du skapat för kravet 14 fungerar och varför de är väl valda enhetestester.*|
